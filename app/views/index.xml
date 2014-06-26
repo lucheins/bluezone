@@ -1,0 +1,72 @@
+ <Alloy>
+        <!--TabGroup backgroundColor="white" >
+            <Tab id="tab1" title="Parqueo" icon="KS_nav_views.png"-->
+            <Window exitOnClose="false" orientation="vertical">	
+					<View id="containerview">
+					<View id="menu">
+						<Button id="leftButton"/>
+						<Button id="rightButton" visible="false"/>
+						<View id="logo"/>
+					</View>
+					<View id="leftMenu">
+						<TableView id="tableMenu" scrollable="false" footerTitle="" left="0">
+							<TableViewSection rowCount="4">
+								<TableViewRow title="Mis Datos" class="headerLabel" height="34" indentionLevel="0">
+								<TableViewRow title="Usuario" class="menuRow" height="46" indentionLevel="1"/>
+								<TableViewRow title="Nombre" class="menuRow" height="46" indentionLevel="1"/>
+								<TableViewRow title="Auto" class="menuRow" height="46" indentionLevel="1"/>
+							</TableViewSection>
+							<TableViewSection rowCount="3">
+								<TableViewRow title="Opciones de Parqueo" class="headerLabel" height="34" indentionLevel="0">
+								<TableViewRow title="Prepago - Zona Azul" class="menuRow" height="46" indentionLevel="1"/>
+								<TableViewRow title="Postpago - Parquedero" class="menuRow" height="46" indentionLevel="1"/>	
+							</TableViewSection>
+						</TableView>
+					</View>            
+                  	<View id="movableView">
+                  	  <View id="moveControl"/>
+	                  <ScrollableView id="topInfo">
+	                   	 <View id="vistaChrono" backgroundColor="transparent"><Label id="chrono" class="chronoLabel"/><Label id="chronoText" class="chronoText">Tiempo De Parqueo</Label></View>
+	                   	 <View id="vistaDistance" backgroundColor="transparent"><Label id="velocidad_label" class="chronoLabel"/><Label id="chronoText" class="chronoText">Velocidad (metros/min.)</Label></View>
+	                  </ScrollableView>
+		              <ScrollableView id="data">
+		              	<View id="scrollView">
+			                <View id="alarma" class="scroll"><Button id="reloj_boton" enabled="true"/><Label id="alarma_label" class="scrollnumber">Off</Label><Label class="scrollsmall">Recordatorio</Label></View>
+		                  	<View id="restante" class="scroll"><Label id="countdown_label" class="scrollnumber">00:00:00</Label><Label class="scrollsmall">Pre-Pagado</Label></View>
+							<View id="velocidad" class="scroll"><Label id="distancia" class="scrollnumber"></Label><Label class="scrollsmall">Distancia Caminada</Label></View>		               
+		                </View>
+		                <View id="scrollView2">
+		                	<View id="llegada" class="scroll"><Label id="accuracy_label" class="scrollnumber">0</Label><Label class="scrollsmall">Exactitud GPS</Label></View>
+		                	<View id="altitud" class="scroll"><Label id="altitud_label" class="scrollnumber">N/D</Label><Label class="scrollsmall">Altimetro</Label></View>
+		                  	<View id="hora" class="scroll"><Label id="hora_label" class="scrollnumber"></Label><Label class="scrollsmall">Hora Actual</Label></View>
+		                  	
+		                 </View>
+		                <!--View id="scrollView3">
+		                  	<View id="temperatura" class="scroll"><Label id="temperatura_label" class="scrollnumber">1</Label><Label class="scrollsmall">Clima</Label></View>
+		                  	<View id="lluvia" class="scroll"><Label class="scrollnumber">1</Label><Label class="scrollsmall">Probabilidad de Lluvia</Label></View>
+							<View id="calorias" class="scroll"><Label id="calorias_label" class="scrollnumber">0</Label><Label class="scrollsmall">Calorias en Recorrido</Label></View>		                 
+		                 </View-->
+		                
+		              </ScrollableView>
+		              
+	              	<View id="mapa">
+	              	<Button id="satellite"/>
+	              	<Button id="fullMap" title="Expandir"/><Button id="smallMap" title="Contraer"/>
+	              		<View id="activityView" visible="false">
+	              			<ActivityIndicator id="ActivityIndicator" indicatorColor="#000" message=" Buscando Auto" visible="false"/>
+	              		</View>
+	              		
+	              	</View>
+	              	<View id="bottomShadow"/>
+	              	<View id="bottom">
+	              		<Button id="gpsOff" title="GPS sin ubicacion" class="textBoton"/>
+	              		<Button id="start" title="Marcar Parqueo" class="textBoton"/>
+	              		<Button id="buscar" title="Buscar Auto" class="textBoton"/>
+	              		<Button id="reintentar" title="Limpiar Ruta" class="textBoton"/>
+	              		<Button id="stop" title="Terminar" class="textBoton"/>
+	              		<Button id="prepaid" title="+ Tiempo" class="textBoton"/>
+	              	</View>
+	           		</View><!-- fin Ventana View-->
+	           	</View>
+                </Window>
+    </Alloy>

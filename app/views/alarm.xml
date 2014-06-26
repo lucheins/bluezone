@@ -1,0 +1,14 @@
+<Alloy>
+	<Window id="alarm" navBarHidden="true">
+		<View id="menu">
+			<Button id='closeAlarm' title="Cerrar"/><View id="logo"/>
+		</View> 
+		<TableView id="table">          
+                <TableViewRow id="five" val="1" title="5 Minutos" text="5 Min." img="/img/img_run/alarma-red.png"/>
+                <TableViewRow id="ten" val="2" title="10 Minutos" text="10 Min." img="/img/img_run/alarma-orange.png"/>
+                <TableViewRow id="fifteen" val="3" title="15 Minutos" text="15 Min." img="/img/img_run/alarma-yellow.png"/>
+                <TableViewRow id="twenty" val="4" title="20 Minutos" text="20 Min." img="/img/img_run/alarma-grey.png"/>
+                <TableViewRow id="off" val="5" title="Off" text="Off" img="/img/img_run/alarma-off.png"/>            
+        </TableView>
+	</Window>	
+</Alloy>

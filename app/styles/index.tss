@@ -1,0 +1,369 @@
+".container": {
+	
+	text_normal : 'AvenirNextCondensed-Medium',
+	text_bold : 'AvenirNextCondensed-Bold',
+	
+},
+"#navGroup":{
+	backgroundColor: '#46a6eb',
+},
+"#menu":{
+	backgroundImage: "/img/bg-TrackEsports.png",
+	top:0,
+	height: 40
+},
+"#logo":{
+	backgroundImage: "/img/qp-logo.png",
+	top: '25%',
+	width: "50%",
+	height: "50%"
+},
+"#movableView":{
+	top: 40,
+	zIndex: 100,
+	width: '100%'
+}
+"#topInfo": {
+		backgroundImage: "/img/img_run/bg_vistas_crono_km.png",
+		backgroundRepeat: true,
+		showPagingControl:true,
+		pagingControlHeight:15,
+		maxZoomScale:2.0,
+		currentPage:0,
+		pagingControlColor: 'transparent',
+		top: 0,
+		height: 80
+},
+
+".chronoLabel": {
+		font: {
+			fontFamily:'HelveticaNeue-CondensedBold',
+			fontSize:47
+		},
+		top:0,
+	    shadowColor:'#000',
+	    shadowOffset:{x:1,y:1},
+	    color:'#fff',
+	    
+},
+".chronoText": {
+		font: {
+			fontFamily:'HelveticaNeue-CondensedBold',
+			fontSize:12
+		},
+		top:50,
+	    shadowColor:'#000',
+	    shadowOffset:{x:1,y:1},
+	    color:'#fff',
+	    height: 15
+},
+"#data":{
+	top:80, 
+	width:'100%', 
+	height:60, 
+	backgroundImage: '/img/img_run/bg_vista_datos.png',
+	showPagingControl:true,
+	pagingControlHeight:15,
+	maxZoomScale:2.0,
+	currentPage:0,
+	pagingControlColor: 'transparent',
+},	
+		
+
+"#scrollView":{
+	top:0 , height:60, width: '100%', backgroundImage: '/img/img_run/bg_vista_datos_lineas.png', backgroundRepeat: false
+},
+"#scrollView2":{
+	top:0 , height:60, width: '100%', backgroundImage: '/img/img_run/bg_vista_datos_lineas.png', backgroundRepeat: false
+},
+"#scrollView3":{
+	top:0 , height:60, width: '100%', backgroundImage: '/img/img_run/bg_vista_datos_lineas.png', backgroundRepeat: false
+},
+"#alarma":{
+	left: 0,
+	width: '33%'
+},
+"#restante":{
+	left: '34%',
+	width: '33%'
+},
+"#velocidad":{
+	left: '67%',
+	width: '33%'
+},
+"#llegada":{
+	left: 0,
+	width: '33%'
+},
+"#altitud":{
+	left: '34%',
+	width: '33%'
+},
+"#hora":{
+	left: '67%',
+	width: '33%'
+},
+"#temperatura":{
+	left: 0,
+	width: '33%'
+},
+"#lluvia":{
+	left: '34%',
+	width: '33%'
+},
+"#calorias":{
+	left: '67%',
+	width: '33%'
+},
+"#mapa":{
+	top:140,
+	backgroundImage: "/img/img_run/bg_vistas_crono_km.png",
+	backgroundRepeat: true,
+	zIndex: 0
+},
+
+"#satellite":{
+	height: 40, 
+	width: 40, 
+	backgroundImage: '/img/img_run/icono_aspecto_mapa.png',
+	zIndex: 1,
+	top:10,
+	left: 20,
+	
+},
+"#fullMap": {
+	top:10,
+	right: 10,
+	zIndex: 1,
+	borderRadius: 5,
+	shadowColor:'#000',
+	shadowOffset:{x:1,y:1},
+	backgroundColor: '#fff',
+	height: 30, 
+	width: 80
+	
+},
+"#smallMap": {
+	top:10,
+	right: 10,
+	zIndex: 1,
+	borderRadius: 5,
+	shadowColor:'#000',
+	shadowOffset:{x:1,y:1},
+	backgroundColor: '#fff',
+	height: 30, 
+	width: 80
+},
+".scrollsmall":{
+	top: '51%',
+	height: '23%',
+	font: {
+			fontFamily:'HelveticaNeue-Light',
+			fontSize:11
+		},
+	color: '#464646',
+	shadowColor:'#dddddd',
+	shadowOffset:{x:1,y:1},
+	textAlign: 'center'
+},
+".scrollnumber":{
+	top: '18%',
+	font: {
+			fontFamily:'HelveticaNeue-CondensedBold',
+			fontSize:19
+		},
+	color: 'black',
+	textAlign: 'center'
+},
+"#bottom":{
+	width: '100%',
+	height: 50,
+	bottom: 0,
+	zIndex: 10000
+},
+"#bottomShadow":{
+	opacity:"0.5",
+	backgroundGradient: {type:'linear', colors:['#787878','transparent'], startPoint:{x:0,y:'100%'}, endPoint:{x:0,y:0},},
+	bottom: 50,
+	height: 5,
+	width: '100%'
+},
+"#start":{
+	bottom: 0,
+	left: 0,
+	style: Titanium.UI.iPhone.SystemButtonStyle.PLAIN,
+	backgroundGradient: {type:'linear', colors:['#46a6eb','#186ba8'], startPoint:{x:0,y:0}, endPoint:{x:0,y:70}, backFillStart:true},
+	width: "65%",
+	height: 50,
+	zIndex: 900
+},
+"#gpsOff":{
+	bottom: 0,
+	left: 0,
+	style: Titanium.UI.iPhone.SystemButtonStyle.PLAIN,
+	backgroundGradient: {type:'linear', colors:['#a30000','#820000'], startPoint:{x:0,y:0}, endPoint:{x:0,y:70}, backFillStart:true},
+	width: "65%",
+	height: 50,
+	zIndex: 3000,
+},
+"#buscar":{
+	bottom: 0,
+	left: 0,
+	style: Titanium.UI.iPhone.SystemButtonStyle.PLAIN,
+	backgroundGradient: {type:'linear', colors:['#186ba8','#113652'], startPoint:{x:0,y:0}, endPoint:{x:0,y:70}, backFillStart:true},
+	width: "65%",
+	height: 50,
+},
+"#reintentar":{
+	bottom: 0,
+	left: 0,
+	style: Titanium.UI.iPhone.SystemButtonStyle.PLAIN,
+	backgroundGradient: {type:'linear', colors:['#46a6eb','#186ba8'], startPoint:{x:0,y:0}, endPoint:{x:0,y:70}, backFillStart:true},
+	width: "65%",
+	height: 50,
+},
+"#stop":{
+	bottom: 0,
+	left: '65%',
+	style: Titanium.UI.iPhone.SystemButtonStyle.PLAIN,
+	backgroundGradient: {type:'linear', colors:['#595858','#232323'], startPoint:{x:0,y:0}, endPoint:{x:0,y:70}, backFillStart:true},
+	width: "35%",
+	height: 50,
+},
+"#prepaid":{
+	bottom: 0,
+	left: '65%',
+	style: Titanium.UI.iPhone.SystemButtonStyle.PLAIN,
+	backgroundGradient: {type:'linear', colors:['#186ba8','#113652'], startPoint:{x:0,y:0}, endPoint:{x:0,y:70}, backFillStart:true},
+	width: "35%",
+	height: 50,
+},
+".textBoton": {
+		font: {
+			fontFamily:'HelveticaNeue-CondensedBold',
+			fontSize:20
+		},
+		color: '#fff',
+	    shadowColor:'#02487a',
+	    shadowOffset:{x:1,y:1},
+	    textAlign:'center',
+	    zIndex: 1000
+	},
+"#activityView":{
+	color: "#000",
+	font: {fontFamily:'HelveticaNeue-CondensedBold', fontSize:16, fontWeight:'bold'},
+	borderRadius: 5,
+	border: 1,
+	borderColor: 'gray',
+	shadowColor:'grey',
+	shadowOffset:{x:1,y:1},
+	top:'20%',
+	left:'20%',
+	width:'60%',
+	zIndex: 1000,	
+	height: '15%',
+	backgroundGradient: {type:'linear', colors:['#f2f2f2','#ffffff'], startPoint:{x:0,y:0}, endPoint:{x:0,y:70}, backFillStart:true},
+	opacity: 0.8
+},
+"#ActivityIndicator":{
+		font: {fontFamily:'HelveticaNeue-CondensedBold', fontSize:16, fontWeight:'bold'},
+		top:'30%',
+		left:'5%',
+		height:'40%',
+		width:'90%',
+		zIndex: 2000,	
+		color: '#000'
+},
+"#activityGPS":{
+	color: "#000",
+	borderRadius: 5,
+	borderColor: 'gray',
+	font: {fontFamily:'HelveticaNeue-CondensedBold', fontSize:16, fontWeight:'bold'},
+	shadowColor:'grey',
+	shadowOffset:{x:1,y:1},
+	top:'20%',
+	left:'10%',
+	width:'80%',
+	zIndex: 1000,	
+	height: '40%',
+	backgroundGradient: {type:'linear', colors:['#f2f2f2','#ffffff'], startPoint:{x:0,y:0}, endPoint:{x:0,y:70}, backFillStart:true},
+	opacity: 0.8
+},
+"#GPSIndicator":{
+		top: '5%',
+		zIndex: 2000,
+		color: '#000'
+},
+"#gpsText":{
+	color: 'black',
+	bottom: "5%",
+	font: {fontFamily:'HelveticaNeue-CondensedBold', fontSize:16, fontWeight:'bold'},
+	zIndex: 2000,
+	textAlign: 'center'
+},
+"#reloj_boton":{
+		backgroundImage: '/img/img_run/alarma-off.png',
+		height : 18,
+		width : 18,
+		top: 20,
+		right: 3
+},
+
+"#leftMenu":{
+	height: '100%',
+	left: 0,
+	top: 40,
+	backgroundColor: '#595858',
+	backgroundGradient: {type:'linear', colors:['#595858','#232323'], startPoint:{x:0,y:0}, endPoint:{x:0,y:'100%'}, backFillStart:true},
+	zIndex: 50,
+	width: '250dp',
+	color: 'white'	
+},
+"#moveControl":{
+	left: 0,
+	width: 20,
+	backgroundColor:'transparent',
+	top: 0,
+	height: '100%',
+	zIndex: 15000,
+},
+"#leftButton": {
+	backgroundImage : 'none',
+	image : "/img/ButtonMenu.png",
+	left : "0",
+	top : "0",
+	width : "60",
+	height : "44",
+	style : "none"
+},
+"#rightButton": {
+	backgroundImage : 'none',
+	image : "/img/ButtonMenu.png",
+	right : "0",
+	top : "0",
+	width : "60",
+	height : "44",
+	style : "none"
+},
+"#tableMenu":{
+	backgroundColor: "transparent",
+	separatorColor: 'black',
+	top: 0
+},
+".menuRow":{
+	backgroundColor: '#595858',
+	color: '#dfdfdf',
+	font: {
+			fontFamily: 'HelveticaNeue-CondensedBold',
+			fontSize: 16,
+			fontWeight: 'bold'
+	},
+},
+".headerLabel":{
+	backgroundColor: '#591c1f',
+	color: '#9b9b9b',
+	font: {
+			fontSize:14
+	},
+}
+//#f26565 GREAT PINK/SALMON COLOR

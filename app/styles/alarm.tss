@@ -1,0 +1,28 @@
+"#alarm":{
+	backgroundColor: 'white'
+},
+"#menu":{
+	backgroundImage: "/img/bg-TrackEsports.png",
+	top:0,
+	height: 40
+},
+"#logo":{
+	backgroundImage: "/img/qp-logo.png",
+	top: '25%',
+	width: "50%",
+	height: "50%"
+},
+"#table":{
+	top: 40
+},
+"#closeAlarm": {
+	top:10,
+	left: 10,
+	zIndex: 1,
+	borderRadius: 5,
+	shadowColor:'#000',
+	shadowOffset:{x:1,y:1},
+	backgroundColor: '#fff',
+	height: 20, 
+	width: 50
+}

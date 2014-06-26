@@ -1,0 +1,35 @@
+".textBoton": {
+		font: {
+			fontFamily:'HelveticaNeue-CondensedBold',
+			fontSize: 17,
+			fontWeight: 'bold'
+		},
+		color: '#fff',
+	    shadowColor:'#02487a',
+	    shadowOffset:{x:1,y:1},
+	    textAlign:'center',
+	    zIndex: 1000,
+	    width:'100%'    
+},
+".scrollnumber":{
+	top: '18%',
+	font: {
+			fontFamily:'HelveticaNeue-CondensedBold',
+			fontSize:16
+		},
+	color: 'black',
+	textAlign: 'center'
+},
+"#reloj_boton":{
+		backgroundImage: '/img/img_run/alarma-off.png',
+		height : 18,
+		width : 18,
+		top: 13,
+		right: 0
+},
+"#topInfo":{
+	showPagingControl: false,
+},
+"#data":{
+	showPagingControl: false,
+}
