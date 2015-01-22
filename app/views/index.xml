@@ -11,13 +11,13 @@
 					<View id="leftMenu">
 						<TableView id="tableMenu" scrollable="false" footerTitle="" left="0">
 							<TableViewSection rowCount="4">
-								<TableViewRow title="Mis Datos" class="headerLabel" height="34" indentionLevel="0">
+								<TableViewRow title="Mis Datos" class="headerLabel" height="34" indentionLevel="0"/>
 								<TableViewRow title="Usuario" class="menuRow" height="46" indentionLevel="1"/>
 								<TableViewRow title="Nombre" class="menuRow" height="46" indentionLevel="1"/>
 								<TableViewRow title="Auto" class="menuRow" height="46" indentionLevel="1"/>
 							</TableViewSection>
 							<TableViewSection rowCount="3">
-								<TableViewRow title="Opciones de Parqueo" class="headerLabel" height="34" indentionLevel="0">
+								<TableViewRow title="Opciones de Parqueo" class="headerLabel" height="34" indentionLevel="0"/>
 								<TableViewRow title="Prepago - Zona Azul" class="menuRow" height="46" indentionLevel="1"/>
 								<TableViewRow title="Postpago - Parquedero" class="menuRow" height="46" indentionLevel="1"/>	
 							</TableViewSection>

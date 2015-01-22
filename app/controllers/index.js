@@ -658,7 +658,7 @@ function getLocation(){
 				latitudeDelta:0.002,
 				longitudeDelta:0.002
 			};
-			mapview.setLocation(region);
+			mapview.setRegion(region);
 			
 			lat = e.coords.latitude;
 			lng = e.coords.longitude;

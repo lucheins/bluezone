@@ -1,3 +1,12 @@
+function __processArg(obj, key) {
+    var arg = null;
+    if (obj) {
+        arg = obj[key] || null;
+        delete obj[key];
+    }
+    return arg;
+}
+
 function Controller() {
     function endTouch() {
         buttonPressed && (buttonPressed = false);
@@ -112,7 +121,7 @@ function Controller() {
                 latitudeDelta: .002,
                 longitudeDelta: .002
             };
-            mapview.setLocation(region);
+            mapview.setRegion(region);
             lat = e.coords.latitude;
             lng = e.coords.longitude;
             velocidad = e.coords.speed;
@@ -194,9 +203,11 @@ function Controller() {
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "index";
-    arguments[0] ? arguments[0]["__parentSymbol"] : null;
-    arguments[0] ? arguments[0]["$model"] : null;
-    arguments[0] ? arguments[0]["__itemTemplate"] : null;
+    if (arguments[0]) {
+        __processArg(arguments[0], "__parentSymbol");
+        __processArg(arguments[0], "$model");
+        __processArg(arguments[0], "__itemTemplate");
+    }
     var $ = this;
     var exports = {};
     $.__views.index = Ti.UI.createWindow({

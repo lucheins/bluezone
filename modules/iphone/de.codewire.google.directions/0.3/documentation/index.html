@@ -1,0 +1,114 @@
+<h1>googledirections Module</h1>
+<h2>Description</h2>
+<p>Simple routing module using Google Directions.</p>
+<h2>Accessing the googledirections Module</h2>
+<p>To access this module from JavaScript, you would do the following:</p>
+<pre><code>var gd = require("de.codewire.google.directions");
+</code></pre>
+<p>The gd variable is a reference to the Module object.</p>
+<h2>Changelog</h2>
+<p>v0.3
+- added optimze option
+- some bug fixing</p>
+<p>v0.2
+- added language option
+- added useMapsV2 option</p>
+<p>v0.1
+- inital release</p>
+<h2>Reference</h2>
+<h3>gd.getRoute(/<em> Object </em>/ config)</h3>
+<p>Retrivies a MapRouteType.
+For config options, see config property.</p>
+<h3>gd.getRoutes(/<em> Object </em>/ config)</h3>
+<p>Retrivies a MapRouteType.
+For config options, see config property.</p>
+<h3>gd.config</h3>
+<p>Possible options are:</p>
+<p>Required</p>
+<ul>
+<li>origin  // {String|Object} The origin address, can be either a string or object (see gd.address).</li>
+<li>destination // {String|Object} The target address, can be either a string or object (see gd.address).</li>
+<li>callback // {Object}<Function> The callback to call upon completion of the request.</li>
+</ul>
+<p>Optional</p>
+<ul>
+<li>mode // {String} one of the gd.travelModes</li>
+<li>waypoints // {String|Object}[] Array of waypoints (see gd.address).</li>
+<li>color // {String} The color of the route.</li>
+<li>name // {String} Name of the route, needed by map.addRoute();. Defaults to '' (empty string).</li>
+<li>width // {Number}<Float> Width of the route stroke. Defaults to 2.</li>
+<li>language // {String} A language code, one of the gd.languages.</li>
+<li>useMapsV2 // {Boolean} Set to true if you are using maps v2 api, defaults to false.</li>
+<li>optimize // {Boolean} Set to true if you want the route to be optimized, works only if you specify multiple waypoints. Defaults to false.</li>
+</ul>
+<h3>gd.travelModes</h3>
+<p>Modes which are avaible while calculating the route.</p>
+<ul>
+<li>driving</li>
+<li>walking</li>
+<li>bicycling</li>
+</ul>
+<h3>gd.languages</h3>
+<p>Modes which are avaible while calculating the route.</p>
+<ul>
+<li>ARABIC </li>
+<li>BASQUE </li>
+<li>BENGALI </li>
+<li>BULGARIAN </li>
+<li>CATALAN </li>
+<li>CHINESE_SIMPLIFIED </li>
+<li>CHINESE_TRADITIONAL</li>
+<li>CROATIAN </li>
+<li>CZECH </li>
+<li>DANISH </li>
+<li>DUTCH </li>
+<li>ENGLISH </li>
+<li>FILIPINO </li>
+<li>FINNISH </li>
+<li>FRENCH </li>
+<li>GALICIAN </li>
+<li>GERMAN </li>
+<li>GREEK </li>
+<li>GUJARATI </li>
+<li>HEBREW </li>
+<li>HINDI </li>
+<li>HUNGARIAN </li>
+<li>INDONESIAN </li>
+<li>ITALIAN </li>
+<li>JAPANESE </li>
+<li>KANNADA </li>
+<li>KOREAN </li>
+<li>LATVIAN </li>
+<li>LITHUANIAN </li>
+<li>MALAYALAM </li>
+<li>MARATHI </li>
+<li>NORWEGIAN </li>
+<li>POLISH </li>
+<li>PORTUGUESE </li>
+<li>PORTUGUESE_BRAZIL </li>
+<li>PORTUGUESE_PORTUGAL </li>
+<li>ROMANIAN </li>
+<li>RUSSIAN </li>
+<li>SERBIAN </li>
+<li>SLOVAK </li>
+<li>SLOVENIAN </li>
+<li>SPANISH </li>
+<li>SWEDISH </li>
+<li>TAMIL </li>
+<li>TELUGU </li>
+<li>THAI </li>
+<li>TURKISH </li>
+<li>UKRAINIAN </li>
+<li>VIETNAMESE </li>
+</ul>
+<h3>gd.address</h3>
+<p>Abstract object containing:</p>
+<ul>
+<li>latitude</li>
+<li>longitude</li>
+</ul>
+<p>properties.</p>
+<h2>Usage</h2>
+<p>See example app.js</p>
+<h2>Author</h2>
+<p>Alexander Bauer <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#105;&#109;&#111;&#100;&#117;&#108;&#101;&#115;&#64;&#99;&#111;&#100;&#101;&#119;&#105;&#114;&#101;&#46;&#100;&#101;">&#116;&#105;&#109;&#111;&#100;&#117;&#108;&#101;&#115;&#64;&#99;&#111;&#100;&#101;&#119;&#105;&#114;&#101;&#46;&#100;&#101;</a> </p>

@@ -33,10 +33,10 @@
         </backgroundModes>
     </iphone>
     <android xmlns:android="http://schemas.android.com/apk/res/android">
-        <tool-api-level>17</tool-api-level>
-        <manifest android:installLocation="auto">
-            <uses-sdk android:maxSdkVersion="17"
-                android:minSdkVersion="8" android:targetSdkVersion="16"/>
+        <tool-api-level>14</tool-api-level>
+        <manifest>
+            <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19"/>
+            <!-- other manifest entries -->
             <application android:theme="@android:style/Theme.Holo.Light"/>
         </manifest>
     </android>
@@ -62,7 +62,7 @@
         <target device="mobileweb">true</target>
         <target device="tizen">false</target>
     </deployment-targets>
-    <sdk-version>3.2.0.GA</sdk-version>
+    <sdk-version>3.2.3.GA</sdk-version>
     <plugins>
         <plugin version="1.0">ti.alloy</plugin>
     </plugins>
